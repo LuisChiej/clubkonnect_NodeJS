@@ -1,0 +1,15 @@
+{
+  "name": "clubkonnect",
+  "version": "1.0.0",
+  "description": "Clubkonnect API NodeJS SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LuisChiej",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  }
+}
