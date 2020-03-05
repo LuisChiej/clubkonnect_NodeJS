@@ -18,6 +18,23 @@ var Clubkonnect = require('clubkonnect').Clubkonnect;
 var konnect = new Clubkonnect('USER_ID', 'API_KEY');
 ```
 
+### Wallet Balance
+```nodejs
+var Clubkonnect = require('clubkonnect').Clubkonnect;
+var konnect = new Clubkonnect('USER_ID', 'API_KEY');
+
+//Check Wallet Balance
+konnect.Wallet.getBalance().then((response)=>{
+  
+    console.log(response)
+
+  }).catch((err)=>{
+
+    console.error(err)
+
+  })
+```
+
 ### Airtime purchase
 ```nodejs
 var Clubkonnect = require('clubkonnect').Clubkonnect;
@@ -27,6 +44,7 @@ var konnect = new Clubkonnect('USER_ID', 'API_KEY');
 konnect.Airtime.charge(
     {
         recipientPhoneNumber: '09054321256',
+        provider: '9mobile' || 'mtn' || 'glo' || 'Airtel',
         amount: 100
     }
 
@@ -63,7 +81,7 @@ konnect.Mobiledata.charge(
     {
         recipientPhoneNumber: '09054321256',
         bundle: '500MB',
-        provider: '9mobile'
+        provider: '9mobile' || 'mtn' || 'glo' || 'Airtel'
     }
 
   ).then((response)=>{
