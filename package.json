@@ -1,6 +1,6 @@
 {
   "name": "clubkonnect",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Clubkonnect API NodeJS SDK",
   "main": "index.js",
   "scripts": {
